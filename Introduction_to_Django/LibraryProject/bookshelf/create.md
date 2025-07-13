@@ -13,6 +13,12 @@ book.save()
 # No output is displayed, but the book is successfully stored
 ```
 
+## Alternative Command using objects.create():
+```python
+from bookshelf.models import Book
+book = Book.objects.create(title="1984", author="George Orwell", publication_year=1949)
+```
+
 ## Verification:
 ```python
 print(f"Book created: {book.title} by {book.author} ({book.publication_year})")
