@@ -1,0 +1,22 @@
+<!-- logout.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Logout</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
+        h1 { color: #333; }
+        a { color: #007cba; text-decoration: none; padding: 10px 20px; border: 1px solid #007cba; border-radius: 4px; }
+        a:hover { background-color: #007cba; color: white; }
+    </style>
+</head>
+
+<body>
+    <h1>You have been logged out</h1>
+    <p>Thank you for using our Library Management System!</p>
+    <a href="{% url 'relationship_app:login' %}">Login again</a>
+</body>
+
+</html>
