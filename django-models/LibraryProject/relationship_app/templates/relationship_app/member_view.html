@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
+            color: white;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .member-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .nav-links {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .nav-links a:hover {
+            background: white;
+            color: #fd79a8;
+        }
+
+        .member-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fdcb6e;
+        }
+
+        .quick-actions {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .action-button {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .action-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📚 Member Portal</h1>
+
+        <div class="welcome-message">
+            <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px;">
+                Welcome to your personal library portal! Discover, borrow, and enjoy our collection.
+            </p>
+        </div>
+
+        <div class="member-stats">
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div>Books Borrowed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2</div>
+                <div>Reserved</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">0</div>
+                <div>Overdue</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">23</div>
+                <div>Total Read</div>
+            </div>
+        </div>
+
+        <div class="quick-actions">
+            <h3>Quick Actions:</h3>
+            <a href="#" class="action-button">🔍 Search Books</a>
+            <a href="#" class="action-button">📋 My Reading List</a>
+            <a href="#" class="action-button">📅 Reserve Book</a>
+            <a href="#" class="action-button">🔄 Renew Books</a>
+        </div>
+
+        <div class="member-features">
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Browse Catalog</h3>
+                <p>Search and discover books from our extensive library collection.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📖</div>
+                <h3>My Books</h3>
+                <p>View your currently borrowed books and reading history.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <h3>Recommendations</h3>
+                <p>Get personalized book recommendations based on your reading preferences.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>Reviews & Ratings</h3>
+                <p>Share your thoughts and read reviews from other members.</p>
+            </div>
+        </div>
+
+        <div class="member-info">
+            <h3>Member Benefits:</h3>
+            <ul style="list-style-type: none; padding: 0;">
+                <li>✅ Borrow up to 10 books simultaneously</li>
+                <li>✅ Reserve popular titles in advance</li>
+                <li>✅ Access digital resources and e-books</li>
+                <li>✅ Participate in book clubs and events</li>
+                <li>✅ Receive personalized recommendations</li>
+                <li>✅ Online account management</li>
+            </ul>
+        </div>
+
+        <div class="nav-links">
+            <a href="{% url 'relationship_app:list_books' %}">Browse Books</a>
+            <a href="{% url 'relationship_app:logout' %}">Logout</a>
+        </div>
+    </div>
+</body>
+
+</html>
